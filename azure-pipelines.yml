@@ -1,10 +1,11 @@
-image: cypress/base:10
+trigger:
+- main
 
-stages:
-  - test
+pool:
+  vmImage: 'ubuntu-latest'
 
-test:
-  stage: test
-  script:
-    - npm install
-    - npm run cypress --spec="cypress/e2e/1-getting-started/login_searchproduct.spec.js"
+steps:
+- script: |
+    npm install
+    npm run cypress --spec="cypress/e2e/1-getting-started/login_searchproduct.spec.js"
+  displayName: 'Run Cypress tests'
