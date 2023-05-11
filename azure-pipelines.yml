@@ -2,8 +2,9 @@ image: cypress/base:10
 
 stages:
   - test
-job1:
-stage: test
-script:
-  - npm install
-  - npm run cypress --spec="cypress/e2e/1-getting-started/login_searchproduct.spec.js"
+
+test:
+  stage: test
+  script:
+    - npm install
+    - npm run cypress --spec="cypress/e2e/1-getting-started/login_searchproduct.spec.js"
