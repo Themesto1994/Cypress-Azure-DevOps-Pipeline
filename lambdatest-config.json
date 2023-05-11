@@ -1,0 +1,38 @@
+{
+   "lambdatest_auth": {
+      "username": "iqbal.tabish30",
+      "access_key": "vnSPiSr6kcWcM8sJflpgWeUcoRBKUjtIeyxZrbifF5feBEhpvZ"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      }
+   ],
+   "run_settings": {
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "Azure DevOps Pipeline 1",
+      "parallels": 2,
+      "specs": "cypress/e2e/1-getting-started/login_searchproduct.spec.js",
+      "ignore_files": "",
+      "network": false,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "10.0.0"
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}
